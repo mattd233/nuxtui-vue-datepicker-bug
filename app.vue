@@ -2,17 +2,15 @@
 import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css'
 
-const email = ref();
-const date = ref();
+const date1 = ref();
+const date2 = ref();
 </script>
 
 <template>
   <UForm class="container">
-    <UFormGroup label="Email" name="email">
-      <UInput v-model="email" />
-    </UFormGroup>
+    <VueDatePicker v-model="date1"></VueDatePicker>
     <UFormGroup label="Date" name="password">
-      <VueDatePicker v-model="date"></VueDatePicker>
+      <VueDatePicker v-model="date2"></VueDatePicker>
     </UFormGroup>
     <UButton type="submit">
       Submit
